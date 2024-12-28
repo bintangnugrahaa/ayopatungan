@@ -4,6 +4,8 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\SubscriptionGroupResource\Pages;
 use App\Filament\Resources\SubscriptionGroupResource\RelationManagers;
+use App\Filament\Resources\SubscriptionGroupResource\RelationManagers\GroupMessagesRelationManager;
+use App\Filament\Resources\SubscriptionGroupResource\RelationManagers\GroupParticipantsRelationManager;
 use App\Models\Product;
 use App\Models\SubscriptionGroup;
 use Filament\Forms;
@@ -110,7 +112,8 @@ class SubscriptionGroupResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            GroupMessagesRelationManager::class,
+            GroupParticipantsRelationManager::class,
         ];
     }
 
