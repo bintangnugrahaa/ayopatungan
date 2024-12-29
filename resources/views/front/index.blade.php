@@ -1,16 +1,5 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-</head>
-<body>
+@extends('layouts.master')
+@section('content')
     <nav class="relative w-full max-w-[1280px] mx-auto h-[140px]">
         <div class="fixed top-10 w-full max-w-[1280px] px-16 z-20">
             <div class="flex items-center w-full max-w-[1280px] h-[100px] mx-auto rounded-full p-5 pl-9 justify-between bg-white shadow-[0px_23px_35px_0px_#0C0F2405]">
@@ -115,12 +104,12 @@
                 @forelse ($newProducts as $itemNewProduct)
                 <div class="product-card flex flex-col rounded-[32px] overflow-hidden bg-white">
                     <div class="w-full h-[180px] flex shrink-0 bg-[#D9D9D9]">
-                        <img src="{{Storage::url($itemNewProduct->photo)}}" class="w-full h-full object-cover" alt="thumbnails">
+                        <img src="{{Storage::url($itemNewProduct->thumbnail)}}" class="w-full h-full object-cover" alt="thumbnails">
                     </div>
                     <div class="flex flex-col p-6 gap-6">
                         <div class="flex items-center gap-3">
                             <div class="w-[62px] h-[62px] flex shrink-0 rounded-xl overflow-hidden">
-                                <img src="{{Storage::url($itemNewProduct->thumbnail)}}" class="w-full h-full object-contain object-center" alt="icon">
+                                <img src="{{Storage::url($itemNewProduct->photo)}}" class="w-full h-full object-contain object-center" alt="icon">
                             </div>
                             <div>
                                 <p class="font-bold text-xl leading-[25px]">{{$itemNewProduct->name}}</p>
@@ -1068,7 +1057,9 @@
         </div>
     </footer>
     
-    <script src="js/accordion.js"></script> 
+    @endsection
+    @push('after-scripts')
+    <script src="{{asset('customjs/accordion.js')}}"></script> 
     <script>
         const texts = document.querySelectorAll('#slider span');
         const sliderContainer = document.getElementById('slider-container');
@@ -1109,5 +1100,4 @@
           setInterval(updateSlider, 2000);
         });
     </script>
-</body>
-</html>
+        @endpush
