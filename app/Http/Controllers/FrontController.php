@@ -23,7 +23,7 @@ class FrontController extends Controller
 
     public function details(Product $product)
     {
-        $ppn = 0.11;
+        $ppn = 0.12;
         $price = $product->price_per_person;
         $totalPpn = $price * $ppn;
         $grandTotal = $price + $totalPpn;

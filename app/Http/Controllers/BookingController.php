@@ -21,7 +21,7 @@ class BookingController extends Controller
 
     public function booking(Product $product)
     {
-        $tax = 0.11;
+        $tax = 0.12;
         $totalTaxAmount = $tax * $product->price_per_person;
         $grandTotalAmount = $product->price_per_person + $totalTaxAmount;
 
@@ -44,6 +44,7 @@ class BookingController extends Controller
     public function payment()
     {
         $data = $this->bookingService->payment();
+        dd($data);
         return view('booking.payment', $data);
     }
 

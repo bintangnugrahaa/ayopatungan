@@ -116,7 +116,7 @@
                         <p class="font-bold text-xl leading-[25px]">{{$product->capacity}}</p>
                     </div>
                     <div class="flex items-center justify-between">
-                        <p class="font-semibold text-lg leading-[22px] text-patungan-grey">PPN 11%</p>
+                        <p class="font-semibold text-lg leading-[22px] text-patungan-grey">PPN 12%</p>
                         <p class="font-bold text-xl leading-[25px]">Rp {{ number_format($totalPpn, 0, ',', '.') }}</p>
                     </div>
                     <hr class="border-patungan-border">
