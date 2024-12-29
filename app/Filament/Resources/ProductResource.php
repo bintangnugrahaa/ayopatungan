@@ -93,8 +93,12 @@ class ProductResource extends Resource
                 ]),
                 Fieldset::make('Additional')->schema([
                     // ...
-                    Forms\Components\Textarea::make('about')
-                        ->required(),
+                    Forms\Components\Repeater::make('how_it_works')
+                    ->relationship('howItWorks')
+                    ->schema([
+                        Forms\Components\Textarea::make('description')
+                            ->required(),
+                    ]),
 
                     Forms\Components\Repeater::make('keypoints')
                         ->relationship('keypoints')
@@ -102,6 +106,9 @@ class ProductResource extends Resource
                             Forms\Components\TextInput::make('name')
                                 ->required(),
                         ]),
+
+                    Forms\Components\Textarea::make('about')
+                        ->required(),
 
                     Forms\Components\Select::make('is_popular')
                         ->options([

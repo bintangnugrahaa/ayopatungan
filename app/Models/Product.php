@@ -45,4 +45,9 @@ class Product extends Model
     {
         return $this->hasMany(ProductKeypoint::class);
     }
+
+    public function howItWorks(): HasMany
+    {
+        return $this->hasMany(HowItWorks::class);
+    }
 }
