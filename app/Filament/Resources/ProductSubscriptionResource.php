@@ -53,7 +53,7 @@ class ProductSubscriptionResource extends Resource
                                         $set('price', $price);
                                         $set('duration', $duration);
 
-                                        $tax = 0.11;
+                                        $tax = 0.12;
                                         $totalTaxAmount = $tax * $price;
                                         $totalAmount = $price + $totalTaxAmount;
 

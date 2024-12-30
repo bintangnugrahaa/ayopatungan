@@ -20,7 +20,7 @@ class BookingService
 
     protected function calculateBookingData(Product $product, $validatedData)
     {
-        $ppn = 0.11;
+        $ppn = 0.12;
         $price = $product->price_per_person;
         $totalPpn = $ppn * $price;
         $totalAmount = $price + $totalPpn;
