@@ -23,11 +23,11 @@
             Group subscription for discounted premium access
         </p>
         <div class="flex items-center justify-center gap-6 mt-16">
-            <a href="#" class="flex items-center rounded-full h-[60px] w-fit px-9 gap-[6px] bg-patungan-orange">
+            <a href="#Our-Services" class="flex items-center rounded-full h-[60px] w-fit px-9 gap-[6px] bg-patungan-orange">
                 <span class="font-bold text-lg leading-5 text-white">Pesan Sekarang</span>
                 <img src="{{asset('assets/images/icons/arrow-right-white.svg')}}" class="w-6 flex shrink-0" alt="icon">
             </a>
-            <a href="#" class="flex items-center rounded-full h-[60px] w-fit px-9 gap-[6px] bg-white border border-patungan-border">
+            <a href="#How-It-Works" class="flex items-center rounded-full h-[60px] w-fit px-9 gap-[6px] bg-white border border-patungan-border">
                 <span class="font-bold text-lg leading-5">Lihat Cara Pesan</span>
             </a>
         </div>
@@ -60,7 +60,7 @@
             <img src="{{asset('assets/images/backgrounds/Ellipse-top.svg')}}" class="absolute top-0 -right-[337px] z-0" alt="eclipse bg">
             <img src="{{asset('assets/images/backgrounds/Ellipse-bottom.svg')}}" class="absolute bottom-0 -left-[283px] z-0" alt="eclipse bg">
         </div>
-        <section class="Content relative flex flex-col w-full max-w-[1280px] px-16 mx-auto gap-8 py-[100px]">
+        <section id="Our-Services" class="Content relative flex flex-col w-full max-w-[1280px] px-16 mx-auto gap-8 py-[100px]">
             <div class="flex items-center justify-between">
                 <div class="flex flex-col gap-5">
                     <h2 class="font-bold text-xl leading-[25px] text-patungan-red">Our Services</h2>
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="flex items-center rounded-full h-[60px] w-fit px-9 gap-[6px] bg-patungan-orange">
+                <a href="#Our-Services" class="flex items-center rounded-full h-[60px] w-fit px-9 gap-[6px] bg-patungan-orange">
                     <span class="font-bold text-lg leading-5 text-white">Pesan Sekarang</span>
                     <img src="{{asset('assets/images/icons/arrow-right-white.svg')}}" class="w-6 flex shrink-0" alt="icon">
                 </a>
@@ -869,7 +869,7 @@
                 </div>
             </div>
             <div id="Foreground" class="absolute bottom-0 w-full h-[457px] flex items-end justify-center bg-[linear-gradient(180deg,rgba(245,243,246,0)_0%,#F5F3F6_100%)]">
-                <a href="#" class="flex items-center rounded-full h-[60px] w-fit px-9 gap-[6px] bg-patungan-orange">
+                <a href="#Our-Services" class="flex items-center rounded-full h-[60px] w-fit px-9 gap-[6px] bg-patungan-orange">
                     <span class="font-bold text-lg leading-5 text-white">Pesan Sekarang</span>
                     <img src="{{asset('assets/images/icons/arrow-right-white.svg')}}" class="w-6 flex shrink-0" alt="icon">
                 </a>
@@ -973,7 +973,7 @@
             <div class="flex gap-[72px]">
                 <div class="flex flex-col gap-6 w-full max-w-[349px] items-start">
                     <img src="{{asset('assets/images/logos/logo.svg')}}" class="h-10 flex shrink-0" alt="logo">
-                    <p class="font-medium leading-[25px] text-patungan-grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="font-medium leading-[25px] text-patungan-grey">AyoPatungan adalah platform untuk berbagi biaya langganan layanan digital secara hemat dan transparan.</p>
                 </div>
                 <div class="flex gap-[52px]">
                     <ul class="flex flex-col gap-4 min-w-[165px]">
@@ -982,16 +982,16 @@
                             <a href="#" class="hover:text-patungan-black transition-all duration-300">Home</a>
                         </li>
                         <li class="font-medium leading-5 text-patungan-grey">
-                            <a href="#" class="hover:text-patungan-black transition-all duration-300">Layanan</a>
+                            <a href="#Our-Services" class="hover:text-patungan-black transition-all duration-300">Layanan</a>
                         </li>
                         <li class="font-medium leading-5 text-patungan-grey">
-                            <a href="#" class="hover:text-patungan-black transition-all duration-300">Cara Pesan</a>
+                            <a href="#How-It-Works" class="hover:text-patungan-black transition-all duration-300">Cara Pesan</a>
                         </li>
                         <li class="font-medium leading-5 text-patungan-grey">
-                            <a href="#" class="hover:text-patungan-black transition-all duration-300">Testimoni</a>
+                            <a href="#Happy-Customers" class="hover:text-patungan-black transition-all duration-300">Testimoni</a>
                         </li>
                         <li class="font-medium leading-5 text-patungan-grey">
-                            <a href="#" class="hover:text-patungan-black transition-all duration-300">FAQ</a>
+                            <a href="#FAQ" class="hover:text-patungan-black transition-all duration-300">FAQ</a>
                         </li>
                     </ul>
                     <ul class="flex flex-col gap-4 min-w-[165px]">
@@ -1009,7 +1009,7 @@
                 </div>
             </div>
             <div class="flex items-center">
-                <p class="w-full font-medium leading-5 text-patungan-grey">©2024 Patungan. All Rights Reserved</p>
+                <p class="w-full font-medium leading-5 text-patungan-grey">©2024 AyoPatungan. All Rights Reserved</p>
                 <div class="flex items-center gap-4 mx-auto shrink-0">
                     <a href="#">
                         <img src="{{asset('assets/images/icons/instagram.svg')}}" class="w-6 flex shrink-0" alt="icon">

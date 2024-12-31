@@ -94,11 +94,11 @@ class ProductResource extends Resource
                 Fieldset::make('Additional')->schema([
                     // ...
                     Forms\Components\Repeater::make('how_it_works')
-                    ->relationship('howItWorks')
-                    ->schema([
-                        Forms\Components\Textarea::make('description')
-                            ->required(),
-                    ]),
+                        ->relationship('howItWorks')
+                        ->schema([
+                            Forms\Components\TextInput::make('description')
+                                ->required(),
+                        ]),
 
                     Forms\Components\Repeater::make('keypoints')
                         ->relationship('keypoints')

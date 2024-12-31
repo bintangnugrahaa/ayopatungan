@@ -79,6 +79,6 @@ class BookingController extends Controller
             return view('booking.check_booking_details', $bookingData);
         }
 
-        return redirect()->route('booking.check_booking')->withErrors(['error' => 'Transaction not found']);
+        return redirect()->route('front.check_booking')->withErrors(['error' => 'Transaction not found']);
     }
 }
